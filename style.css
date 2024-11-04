@@ -255,6 +255,8 @@ nav button i{
 
 .about .items .item .inner img{
     width: 100%;
+    max-height: 200px;
+    min-height: 300px;
     margin-bottom: 16px;
     border-radius: 12px;
 }

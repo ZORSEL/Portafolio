@@ -171,3 +171,54 @@ nav button i{
     color: #666;
     margin: 0 16px 16px;
 }
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+
+}
+
+  /* Estilos del modal */
+  .modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 400%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+ 
+    
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 50px;
+    max-width: 900px;
+    text-align: center;
+    position: relative;
+}
+
+.modal img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
