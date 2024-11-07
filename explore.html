@@ -37,7 +37,7 @@
                     <h3>School platform for graduate management</h3>
                     <p>Descripción breve del proyecto 1.</p>
                 </div>
-                <div class="card">
+                <div class="card" onclick="openModal('assets/', 'Finance web application', 'Descripción detallada del proyecto 2')">
                     <img src="https://via.placeholder.com/300x200" alt="Project 2">
                     <h3>Project 2</h3>
                     <p>Descripción breve del proyecto 2.</p>
@@ -71,13 +71,9 @@
 </html>
 
 
-<script>
-    function scrollToSection() {
-        document.getElementById('seccionDestino').scrollIntoView({ behavior: 'smooth' });
-    }
-</script>
 
-<script>
+
+<script>    
     function openModal(imageSrc, title, description) {
         document.getElementById("modal-image").src = imageSrc;
         document.getElementById("modal-title").textContent = title;
