@@ -74,15 +74,25 @@
 
 
 
-<script>    
-    function openModal(imageSrc, title, description) {
-        document.getElementById("modal-image").src = imageSrc;
-        document.getElementById("modal-title").textContent = title;
-        document.getElementById("modal-description").textContent = description;
-        document.getElementById("modal").style.display = "flex";
-    }
+<script>    
+    function openModal(imageSrc, title, description) {
+        document.getElementById("modal-image").src = imageSrc;
+        document.getElementById("modal-title").textContent = title;
+        document.getElementById("modal-description").textContent = description;
+        document.getElementById("modal").style.display = "flex";
+    }
 
-    function closeModal() {
-        document.getElementById("modal").style.display = "none";
-    }
+    function closeModal() {
+        document.getElementById("modal").style.display = "none";
+    }
+
+    // **NUEVO CÓDIGO AÑADIDO:**
+    // Escuchar el evento de presionar cualquier tecla en todo el documento
+    document.addEventListener('keydown', function(event) {
+        // Verificar si la tecla presionada es 'Escape'
+        if (event.key === 'Escape') {
+            // Llamar a tu función existente para cerrar el modal
+            closeModal();
+        }
+    });
 </script>
